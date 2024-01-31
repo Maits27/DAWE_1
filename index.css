@@ -148,11 +148,12 @@ dt{
     font-size: larger;
     font-weight: bold;
     text-decoration: underline;
+    font-style: italic;
 }
 
 dd{
     text-align: justify;
-    padding: 5px 0px 5px;
+    padding: 5px 0px 10px;
 }
 
 p{

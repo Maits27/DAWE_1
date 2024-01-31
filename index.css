@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-image: url("avion.jpg");
+    background-image: url("./img/avion.jpg");
     font-family: 'Century Gothic', sans-serif;
 }
 
@@ -69,8 +69,10 @@ a:hover{
 .inicioNav:hover{
     font-weight: normal;
     background: none;
+    text-decoration: underline;
     background-color: #333;
     color: #fff;
+    text-transform: uppercase;
 }
 
 .content {
@@ -118,6 +120,19 @@ aside a{
     font-weight: bold;
 }  
 
+.menuBoton{
+    font-weight: bold;
+    background-color: #a8b8ff; 
+    color: #333;
+}
+
+.menuBoton:hover{
+    font-weight: normal;
+    background: none;
+    background-color: #333;
+    color: #fff;
+}
+
 .imagenAside{
     height: auto;
     width: 100%;
@@ -130,7 +145,18 @@ dl{
     padding: 0px 0px 0px 20px;
 }
 dt{
+    font-size: larger;
     font-weight: bold;
+    text-decoration: underline;
+}
+
+dd{
+    text-align: justify;
+    padding: 5px 0px 5px;
+}
+
+p{
+    text-align: justify;
 }
 
 footer{

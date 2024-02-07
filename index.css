@@ -13,7 +13,6 @@ main{
     border: 1px solid black;
     width: 80%;
     margin: auto;
-    padding-bottom: 30px;
     font-size: smaller;
 }
 
@@ -143,23 +142,29 @@ aside a{
 
 dl{
     padding: 0px 0px 0px 20px;
+    text-align: justify;
+    font-size: smaller;
 }
 dt{
-    font-size: larger;
-    font-weight: bold;
     text-decoration: underline;
     font-style: italic;
 }
 
 dd{
-    text-align: justify;
     padding: 5px 0px 10px;
 }
 
 p{
     text-align: justify;
+    padding: 5px 0px 5px;
 }
-
+article{
+    padding: 0px 0px 20px;
+}
+hr{
+    color: #999;
+    background-color: #999; 
+}
 footer{
     display: flex;
     justify-content: center;

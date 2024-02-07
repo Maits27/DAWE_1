@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-image: url("./img/avion.jpg");
+    background-image: url("../img/avion.jpg");
     font-family: 'Century Gothic', sans-serif;
 }
 
@@ -14,6 +14,7 @@ main{
     width: 80%;
     margin: auto;
     font-size: smaller;
+    margin-bottom: 100px;
 }
 
 header{
@@ -123,6 +124,7 @@ aside a{
     font-weight: bold;
     background-color: #a8b8ff; 
     color: #333;
+    text-decoration: underline;
 }
 
 .menuBoton:hover{

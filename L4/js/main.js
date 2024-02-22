@@ -27,6 +27,8 @@ window.onload = function() {
     var buttons = document.querySelectorAll("button");
     buttons.forEach(button => {
         button.addEventListener("click", function() {
+            var producto_div = this.parentElement.getElementsByTagName("div")[0];
+            var nombre = producto_div.innerText;
             
         });
     });

@@ -3,9 +3,9 @@ import { Vuelo } from './vuelo.js';
 import { Alojamiento } from './alojamiento.js';
 
 export const tiposProductos = [
-    Visita.getTipoProducto(), 
-    Vuelo.getTipoProducto(), 
-    Alojamiento.getTipoProducto()
+    Visita.tipoProducto, 
+    Vuelo.tipoProducto, 
+    Alojamiento.tipoProducto
 ];
 
 export const productosPorClase = [

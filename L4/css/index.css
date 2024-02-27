@@ -32,7 +32,6 @@ main{
 }
 
 #todoContenido{
-    width: 85%;
     border:  1px solid #000;
     padding: 0px;
     box-sizing: border-box;
@@ -60,15 +59,36 @@ main{
 }
 
 aside{
-    border: 2px solid #000;
-
-    margin: 0;
-    width: 15.2%;
-    align-items: center;
-    box-sizing: border-box;
     position: fixed;
     top: 0;
     right: 0;
+    border: 2px solid #000;
+    overflow-y: auto; /* Scroll vertical */
+    overflow-x: hidden; /* Ocultar scroll horizontal */
+    visibility: hidden;
+    margin: 0;
+    align-items: center;
+    box-sizing: border-box;
+    width: 15.2%;
     height: 100%;
     align-content: center;
+}
+
+.producto{
+    border: 1px solid #000;
+    margin: 10px;
+
+}
+.nombre_producto{
+    font-weight: bold;
+    background-color: rgb(125, 196, 230);
+    color: #f4f4f4;
+    padding: 6px;
+}
+
+.nombre_producto_carrito{
+    font-weight: bold;
+}
+.producto_carrito{
+    padding: 10px;
 }

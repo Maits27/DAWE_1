@@ -3,18 +3,18 @@ import { Producto } from './producto.js';
 export class Visita extends Producto{
     constructor(nombre, precio, ciudad){
         super(nombre, precio);
-        this.ciudad = ciudad;
+        this._ciudad = ciudad;
     }
     
-    getCiudad(){
-        return this.ciudad;
+    get ciudad(){
+        return this._ciudad;
     }   
 
-    setCiudad(ciudad){
-        this.ciudad = ciudad;
+    set ciudad(nueva_ciudad){
+        this._ciudad = nueva_ciudad;
     }
 
-    static getTipoProducto() {
+    static get tipoProducto() {
         return "Visita";
     }
 }

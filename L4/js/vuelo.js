@@ -3,26 +3,27 @@ import { Producto } from './producto.js';
 export class Vuelo extends Producto{
     constructor(nombre, precio, origen, destino){
         super(nombre, precio);
-        this.origen = origen;
-        this.destino = destino;
-    }
-    
-    getOrigen(){
-        return this.origen;
-    }
-    
-    setOrigen(origen){
-        this.origen = origen;
+        this._origen = origen;
+        this._destino = destino;
     }
 
-    getDestino(){
-        return this.destino;
+    get origen(){
+        return this._origen;
     }
 
-    setDestino(destino){
-        this.destino = destino;
+
+    set origen(nuevo_origen){
+        this._origen = nuevo_origen;
     }
-    static getTipoProducto() {
+
+    get destino(){
+        return this._destino;
+    }
+
+    set destino(nuevo_destino){
+        this._destino = nuevo_destino;
+    }
+    static get tipoProducto() {
         return "Vuelo";
     }
 }

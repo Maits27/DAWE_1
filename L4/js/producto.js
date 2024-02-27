@@ -1,23 +1,23 @@
 export class Producto{
     constructor(nombre, precio){
-        this.nombre = nombre;
-        this.precio = precio;
+        this._nombre = nombre;
+        this._precio = precio;
     }
     
-    getNombre(){
-        return this.nombre;
+    get nombre(){
+        return this._nombre;
     }
 
-    getPrecio(){
-        return this.precio;
+    get precio(){
+        return this._precio;
     }   
     
-    setNombre(nombre){
-        this.nombre = nombre;
+    set nombre(nuevo_nombre){
+        this._nombre = nuevo_nombre;
     }
     
-    setPrecio(precio){
-        this.precio = precio;
+    set precio(nuevo_precio){
+        this._precio = nuevo_precio;
     }
 
     

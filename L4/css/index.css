@@ -92,3 +92,13 @@ aside{
 .producto_carrito{
     padding: 10px;
 }
+span{
+    padding: 4px;
+    display: block;
+}
+.boton_comprar{
+    padding: 4px;
+}
+input{
+    padding: 4px;
+}

@@ -1,0 +1,52 @@
+body{
+    background-color: azure;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px;
+}
+
+#eleccion{
+    padding: 20px;
+}
+
+button{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+    background-color: white;
+    color: #000b30;
+    border-radius: 10px ;
+    border: 2px solid #000b30;
+}
+#datos{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+}
+h1{
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #000b30;
+}
+h2{
+    text-align: center;
+    color: #000b30;
+}
+h3{
+    text-align: center;
+    color: #000b30;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    align-items: center;
+}
+li{
+    padding: 5px;
+    margin: 5px;
+}
+img{
+    text-align: center;
+}

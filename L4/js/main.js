@@ -21,19 +21,19 @@ function imprimirProducto(producto) {
     if (producto instanceof Vuelo) {
         return `<div class="producto">
                     <div class="nombre_producto">${producto.nombre}</div>
-                    <span style="display: block;padding: 4px;"><strong>Precio:</strong> ${producto.precio}€</span>
-                    <span style="display: block;padding: 4px;"><strong>Origen:</strong> ${producto.origen}</span>
-                    <span style="display: block;padding: 4px;"><strong>Destino:</strong> ${producto.destino}</span>
-                    <button disabled style="padding: 4px;">Comprar</button>
-                    <input type="number" value="0" min="0" max="9" style="padding: 4px;">
+                    <span><strong>Precio:</strong> ${producto.precio}€</span>
+                    <span><strong>Origen:</strong> ${producto.origen}</span>
+                    <span><strong>Destino:</strong> ${producto.destino}</span>
+                    <button disabled>Comprar</button>
+                    <input type="number" value="0" min="0" max="9">
                 </div>`;
     }else {
         return `<div class="producto">
                     <div class="nombre_producto">${producto.nombre}</div>
-                    <span style="display: block;padding: 4px;"><strong>Precio:</strong> ${producto.precio}€</span>
-                    <span style="display: block;padding: 4px;"><strong>Ciudad:</strong> ${producto.ciudad}</span>
-                    <button disabled style="padding: 4px;">Comprar</button>
-                    <input type="number" value="0" min="0" max="9" style="padding: 4px;">
+                    <span><strong>Precio:</strong> ${producto.precio}€</span>
+                    <span><strong>Ciudad:</strong> ${producto.ciudad}</span>
+                    <button class="boton_comprar" disabled>Comprar</button>
+                    <input type="number" value="0" min="0" max="9">
                 </div>`;
     }
 }

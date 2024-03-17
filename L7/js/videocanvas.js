@@ -81,8 +81,8 @@ function procesarFrame(e) {
 	}
 	if (rotar){
 		buffer.translate(bufferCanvas.width / 2, bufferCanvas.height / 2);
-		buffer.rotate(Math.PI / 450);
-		buffer.translate(bufferCanvas.width / 2, bufferCanvas.height / 2);
+		buffer.rotate((Math.PI / 180) * 2);
+		buffer.translate(-bufferCanvas.width/2, -bufferCanvas.height/2);
 	}
 	display.putImageData(frame, 0, 0);
 

@@ -1,0 +1,83 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 16px;
+    padding: 0;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+fieldset{
+    margin-bottom: 10px;
+}
+
+#form1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: flex-start;
+    width: 100%;   
+}
+#form2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+#filedrag
+{
+	display: absolute;
+	font-weight: bold;
+	text-align: center;
+	padding: 1em 0;
+	margin: 1em 0;
+	color: #555;
+	border: 2px dashed #555;
+	border-radius: 7px;
+	cursor: default;
+    width: 100%;
+}
+
+#filedrag.hover
+{
+	color: rgb(0, 131, 207);
+	border-color: rgb(0, 131, 207);
+	border-style: solid;
+	box-shadow: inset 0 3px 4px #888;
+}
+
+label{
+    margin: 5px;
+    width: 100%;
+}
+input{
+    width: auto;
+    margin: 6px;
+}
+#email{
+    width: 50%;
+}
+#libro{
+    width: 50%;
+}
+
+#errores{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+ul { 
+    list-style: none; 
+    margin-left: 0%; 
+}
+li{
+    padding-bottom: 5px; 
+}
+.error{
+    color: rgb(255, 196, 0);
+}

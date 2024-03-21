@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Web Page</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="js/validation.js"></script>
+</head>
+<body>
+    <form id="form" method="post">
+        <fieldset>
+            <legend>Datos del cliente</legend>
+            <div id="form1">
+                <label>Nombre: <input type="text" id="nombre" placeholder="Introduce tu nombre" autofocus></label>
+                <label>Teléfono: <input type="tel" id="telefono" placeholder="Patrón: 123-456-789"></label>
+                <label>E-mail: <input type="email" id="email" placeholder="Introduce tu dirección de correo electrónico"></label>
+            </div>
+        </fieldset>  
+        <fieldset>
+            <legend>Libros</legend>
+            <div id="form2">
+                <input id="libro" list="sugerencias"/>
+                <datalist id="sugerencias">
+                    <option value="Programar en Python"></option>
+                    <option value="Programar en Java"></option>
+                    <option value="Programar para normies"></option>
+                    <option value="Ingeniería de software"></option>
+                    <option value="Clean code"></option>
+                </datalist>
+                <label>Cantidad (Max 5): <input type="number" value="" min="0" max="5" id="cantidad"></label>
+            </div>
+            <div id="errores">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>File upload</legend>
+            <div id="ficherosDiv">
+                <label for="fileselect">Elige los ficheros a subir:</label>
+                <input type="file" id="fileselect" name="fileselect" multiple />
+                <div id="filedrag"> Arrastra aquí tus ficheros</div>
+            </div>
+        </fieldset>
+        <input type="submit" id="enviar" value="Enviar">
+    </form>
+    <label id="mensajes">Mensajes de estado:</label>
+    <ul id="elementos">
+    </ul>
+    <script src="js/filedrag.js"></script>
+</body>
+</html>
